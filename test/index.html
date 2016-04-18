@@ -1,0 +1,172 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>test_move</title>
+
+	<script type="text/javascript">
+
+
+$(function() {
+ 
+
+function setCookie(cookieName, cookieValue, cookieExpire)   {
+
+                                if(!cookieName || !cookieValue) {
+
+                                                return false;
+
+                                                }; // end if
+
+                             var cookieDate = cookieExpire ? new Date(cookieExpire) : new Date();
+
+                                cookieValue = escape(cookieValue.toString());
+
+                                document.cookie = cookieName+'='+cookieValue+'; expires='+ cookieDate.toGMTString() + '; path=/';
+
+                                return true;
+
+                                }; // end setCookie func
+
+ 
+
+function delCookie(cookieName)  {
+
+                if(!cookieName) {
+
+                        return false;
+
+                        }; // end if
+
+                var cookieDate = new Date('01/01/1970');
+
+                document.cookie = cookieName+'=""; expires='+ cookieDate.toGMTString() + '; path=/';
+
+                return true;
+
+                }; // end delCookie func
+
+ 
+
+function getCookie(cookieName)  {
+
+                if(!cookieName) {
+
+                        return false;
+
+                        }; // end if
+
+                var cookieArray = document.cookie.split('; ');
+
+                for(var i = 0; i < cookieArray.length; i++)  {
+
+                                        var name_valueCookie = cookieArray[i].split('=');
+
+                                        if(name_valueCookie[0] == cookieName)   {
+
+                                                            return unescape(name_valueCookie[1]);
+
+                                                            }; // end if
+
+                                        }; // end for
+
+                return false;
+
+                }; // end getCookie func
+
+ 
+ 
+
+var flag = 0;
+
+ 
+
+        $('#KobRU_mainDiv').mousedown(function()    {
+
+                                flag = 1;
+
+                                flagFunc();
+
+                                $(this).css({'cursor':'move'});
+
+                                }); // end
+
+        $('#KobRU_mainDiv').mouseup(function()      {
+
+                                flag = 0;
+
+                                flagFunc();
+
+                                $(this).css({'cursor':'default'});
+
+                                }); // end
+
+function flagFunc() {
+
+                if(flag == 1)   {
+
+                        $('#p1').html('флаг=1');
+
+
+                        var objDiv = $('#KobRU_mainDiv');
+
+                        objDiv.bind('mousemove',function(evt)   {
+
+                                        var x = evt.pageX;
+
+                                        var y = evt.pageY;
+
+                                        $(this).css({'left':x-100+'px','top':y-100+'px'});
+
+                                        if(flag == 0)   {
+
+                                                $(this).unbind('mousemove');
+
+                                                        return;
+
+                                              }; // end if flag
+
+                                        }); // end mousemove
+
+                        }
+
+                else        {
+
+                        $('#p1').html('флаг=0');
+
+                        var x = $('#KobRU_mainDiv').css('left');
+
+                        var y = $('#KobRU_mainDiv').css('top');
+
+                        $('#KobRU_mainDiv').css({'left':x,'top':y});
+
+                        var today = new Date();
+
+                        var NNY = today.getFullYear()+1;
+
+                        var nextYear =  new Date(NNY,0,1);
+
+                        setCookie('positionx',x, nextYear);
+
+                        setCookie('positiony',y, nextYear);
+
+                        }; // end if else flag
+
+}; // end func flag
+
+ 
+
+var valx = getCookie('positionx');
+
+var valy = getCookie('positiony');
+
+$('#KobRU_mainDiv').css({'left':valx,'top':valy}).fadeIn(400);
+
+}); // end ready
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

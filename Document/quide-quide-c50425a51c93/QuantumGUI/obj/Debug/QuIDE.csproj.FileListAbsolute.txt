@@ -1,0 +1,17 @@
+E:\5 kurs\diplom\Document\quide-quide-c50425a51c93\QuantumGUI\obj\Debug\QuIDE.csprojResolveAssemblyReference.cache
+E:\5 kurs\diplom\Document\quide-quide-c50425a51c93\QuantumGUI\obj\Debug\App.baml
+E:\5 kurs\diplom\Document\quide-quide-c50425a51c93\QuantumGUI\obj\Debug\Controls\CircuitGrid.g.cs
+E:\5 kurs\diplom\Document\quide-quide-c50425a51c93\QuantumGUI\obj\Debug\Controls\CompositeInput.g.cs
+E:\5 kurs\diplom\Document\quide-quide-c50425a51c93\QuantumGUI\obj\Debug\Controls\AboutWindow.g.cs
+E:\5 kurs\diplom\Document\quide-quide-c50425a51c93\QuantumGUI\obj\Debug\Controls\ParametricInput.g.cs
+E:\5 kurs\diplom\Document\quide-quide-c50425a51c93\QuantumGUI\obj\Debug\Controls\NewRegisterInput.g.cs
+E:\5 kurs\diplom\Document\quide-quide-c50425a51c93\QuantumGUI\obj\Debug\Controls\PhaseDistInput.g.cs
+E:\5 kurs\diplom\Document\quide-quide-c50425a51c93\QuantumGUI\obj\Debug\Controls\PropertiesPane.g.cs
+E:\5 kurs\diplom\Document\quide-quide-c50425a51c93\QuantumGUI\obj\Debug\Controls\MatrixInput.g.cs
+E:\5 kurs\diplom\Document\quide-quide-c50425a51c93\QuantumGUI\obj\Debug\Controls\OutputGrid.g.cs
+E:\5 kurs\diplom\Document\quide-quide-c50425a51c93\QuantumGUI\obj\Debug\Controls\GammaInput.g.cs
+E:\5 kurs\diplom\Document\quide-quide-c50425a51c93\QuantumGUI\obj\Debug\App.g.cs
+E:\5 kurs\diplom\Document\quide-quide-c50425a51c93\QuantumGUI\obj\Debug\GeneratedInternalTypeHelper.g.cs
+E:\5 kurs\diplom\Document\quide-quide-c50425a51c93\QuantumGUI\obj\Debug\QuIDE_MarkupCompile.cache
+E:\5 kurs\diplom\Document\quide-quide-c50425a51c93\QuantumGUI\obj\Debug\QuIDE_MarkupCompile.lref
+E:\5 kurs\diplom\Document\quide-quide-c50425a51c93\QuantumGUI\bin\Debug\QuIDE.exe.config
