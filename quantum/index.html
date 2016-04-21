@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
  	<head>
 	    <meta charset="utf-8">
@@ -10,6 +10,7 @@
 	    <!-- Bootstrap -->
 	    <link href="css/bootstrap.css" rel="stylesheet">
 	    <link rel="stylesheet" type="text/css" href="css/mystyle.css">
+	    <script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
 
 	    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -33,24 +34,42 @@
 			</div>
 		</div>
 
-		<h2>One-qutrit gates</h2>
+		<h2>One-qutrit gates <input id="value" type="number" min="3" max="32" value="5">Lines</input> 
+		<input type="button" id="line" alt="do it" value="do it"></input>
+		</h2> 
+
 		<div class="container">
-		<div id="menu">
-			<div id="prymituv" class="container">
-				<div id="size-prym"><img src="images/0.bmp" alt="0"></div>
-				<div id="size-prym"><img src="images/1.bmp" alt="1"></div>
-				<div id="size-prym"><img src="images/2.bmp" alt="2"></div>
-				<div id="size-prym"><img src="images/01.bmp" alt="01"></div>
-				<div id="size-prym"><img src="images/02.bmp" alt="02"></div>
-				<div id="size-prym"><img src="images/12.bmp" alt="12"></div>
+			<div id="menu">
+				<div id="prymituv" class="container">
+					<div id="size-prym"><img src="images/0.bmp" alt="0"></div>
+					<div id="size-prym"><img src="images/1.bmp" alt="1"></div>
+					<div id="size-prym"><img src="images/2.bmp" alt="2"></div>
+					<div id="size-prym"><img src="images/01.bmp" alt="01"></div>
+					<div id="size-prym"><img src="images/02.bmp" alt="02"></div>
+					<div id="size-prym"><img src="images/12.bmp" alt="12"></div>
+				</div>
+			</div>
+
+			<div id="analysator">
+				<input type="number" min="0" max="2"></input>
+				<img src="images/Line.bmp">
 			</div>
 		</div>
 
-		<div id="analysator">
-		<img src="images/Line.bmp">
+		<script type="text/javascript">
+			document.getElementById("line").onclick = function(){
 
-		</div>
-		</div>
+		
+				$(document).ready(function() {
+					var a = 0;
+				    var block = $('#analysator');
+					    for (var i = 0; i < $("#value").val(); i++) {
+					      block.clone().insertAfter(block);
+					    }
+//						$("#value").val() = 0;
+				});
+		}
+		</script>
 
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>

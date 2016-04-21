@@ -29,13 +29,23 @@
 
 #analysator {
 	width: 100%;
-	/height: 90%;
  	display: block; 
- 	/background-color: #6267CB;
+ 	margin-left: 100px;
 }
 
 #analysator img{
-	width: 80%;
+	width: 85%;
 	height: 40px;
-	margin-left: 80px; 
+	margin-left: 10px; 
+}
+
+#analysator input{
+	height: 35px;
+	width: 35px;
+	margin-left: 20px;
+	
+}
+
+#value {
+	align-content: center;
 }
